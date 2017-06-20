@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 
 import tkinter
@@ -7,6 +7,7 @@ import tkinter
 '''
 Button
 '''
+
 top = tkinter.Tk()
 quit = tkinter.Button(top, text='Hello World!', command=top.quit)
 quit.pack()

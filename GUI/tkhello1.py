@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 
 import tkinter
@@ -6,6 +6,7 @@ import tkinter
 '''
 Label
 '''
+
 top = tkinter.Tk()
 label = tkinter.Label(top, text='Hello World!')
 label.pack()
