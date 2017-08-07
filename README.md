@@ -7,3 +7,4 @@ Learn this book and do some exercises.
 - 数据库编程
 - MicrosoftOffice编程
 - Web开发
+- Django
