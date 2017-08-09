@@ -9,4 +9,7 @@ def index(request):
 
 
 def home(request):
-    return render(request, 'home.html')
+    string = u'There are some cources:'
+    TutorialList = ['html', 'css', 'dajngo', 'python', 'javascript',]
+    return render(request, 'home.html', {'TutorialList': TutorialList})
+

@@ -7,6 +7,14 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        Programming every time, everywhere.
+       <b>Programming </b> every time, everywhere.<br>
+       There are some cources:<br>      
+       {% for i in TutorialList %}
+       {{i}}
+       {% if not forloop.last %}
+            ,
+       {% endif %}
+       {% endfor %}
+
     </body>
 </html>
