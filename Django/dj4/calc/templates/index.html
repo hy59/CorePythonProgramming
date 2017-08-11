@@ -8,10 +8,19 @@
     </head>
     <body>
     <p>Please input 2 numbers:</p>
-
+   
+    <!-- use get method
     <form action="/add/" method="get">
         a: <input type="text" name="a" value=""><br>
         b: <input type="text" name="b" value=""><br>
+        <input type="submit" name="submit" value="submit">
+    </form>
+    -->
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <br>
         <input type="submit" name="submit" value="submit">
     </form>
     </body>
