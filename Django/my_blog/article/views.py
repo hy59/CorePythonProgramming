@@ -5,7 +5,8 @@ from article.models import Article
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Welcome!")
+    post_list = Article.objects.all()
+    return render(request, 'home.html', {'post_list': post_list})
 
 def detail(request, my_args):
     post = Article.objects.all()[int(my_args)]
