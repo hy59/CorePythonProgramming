@@ -14,3 +14,10 @@ def detail(request, my_args):
     print (my_args)
     post = Article.objects.get(id=int(my_args))
     return render(request, 'post.html', {'post': post})
+
+def aboutMe(request):
+    return render(request, 'aboutme.html')
+
+
+
+    
