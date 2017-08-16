@@ -18,6 +18,8 @@ def detail(request, my_args):
 def aboutMe(request):
     return render(request, 'aboutme.html')
 
-
+def search_tag(request, tag) :
+    post_list = Article.objects.filter(category = tag) #contains
+    return render(request, 'tag.html', {'post_list' : post_list})
 
     

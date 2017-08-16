@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^$', article_views.home, name='home'),
     url(r'^(?P<my_args>\d+)/$', article_views.detail, name='detail'),
     url(r'^aboutme/$', article_views.aboutMe, name='aboutme'),
-   
+    url(r'^tag(?P<tag>\w+)/', article_views.search_tag, name = 'search_tag'),
 ]
